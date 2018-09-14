@@ -9,11 +9,13 @@ $(document).ready(function() {
     fitToSection: true,
     animateAnchor: true,
     recordHistory: true,
+    slidesNavigation: true,
+	slidesNavPosition: 'bottom',
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     // anchors: ["intro", "methodology", "team", "vision", "news", "contact"],
     onLeave: function() {},
     afterLoad: function(index, nextIndex) {
-      var currentSlide = nextIndex.anchor;
+      // var currentSlide = nextIndex.anchor;
     }
     // fadingEffect: "slides"
   });

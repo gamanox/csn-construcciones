@@ -13,19 +13,213 @@
 </head>
 
 <body>
-	{{#proyectos}}
-	{{#each this}}
-	<article>
-		<h3>{{proyectos_entry.blog_title}}</h3>
-		<h3>{{{proyectos_entry.blog_text}}}</h3>
-		<a href="/proyectos/{{page_slug}}">Read more...</a>
-	</article>
-	{{/each}}
-	{{/proyectos}}
-
+	<div id="menu-principal">
+		<div class="container-fluid">
+			<div class="row">
+				<ul class="nav justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Quienes somos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Servicios</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Instalaciones</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Clientes</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contactos</a>
+			</li>
+		</ul>
+			</div>
+		</div>
+	</div>
+	{{#servicio}}
+		{{#each this}}
+		<article>
+			<h3>{{servicio.titulo_servicio}}</h3>
+			
+			<a href="/servicios/{{page_slug}}">Read more...</a>
+		</article>
+		{{/each}}
+	{{/servicio}}
 
 	<div id="fullpage">
-		<div class="section" id="intro-section">
+		{{!-- //seccion About --}}
+		<div class="section" id="quienes-somos-section">	
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+								<h1 class="quienes-somos-encabezado text-center">¿QUIENES SOMOS?</h1>	
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">			
+								<p class="quienes-somos-descripcion text-center">
+									Somos una empresa emprendedora que inicio actividades en el año 2009, y que con el paso del tiempo y al ir observando las diferentes necesidades de nuestros clientes potenciales hemos ido cambiando y haciendo mejoras para así poder ofrecer un mejor servicio.
+								</p>
+								<p class="quienes-somos-descripcion text-center">
+									Nos enfocamos en el diseño, desarrollo y construcción de proyectos específicos
+								</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+			{{!-- Mision Vision --}}
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+								<h1 class="quienes-somos-encabezado text-center">Misión</h1>	
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">			
+								<p class="quienes-somos-descripcion text-center">
+									Construcciones y servicios del noreste es una empresa  de servicios de construcción en el ámbito público y privado, cuya misión es satisfacer las necesidades de sus clientes antes, durante y después de finalizado el proyecto, proporcionando a nuestros clientes la calidad en la  construcción  superando sus expectativas.
+								</p>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+								<h1 class="quienes-somos-encabezado text-center">Visión</h1>	
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">			
+								<p class="quienes-somos-descripcion text-center">
+									Ser una empresa reconocida y competitiva, con una organización ágil e innovadora, atendiendo las mejores oportunidades de negocio dentro de los más altos estándares de calidad, servicio y cumplimiento, en beneficio de la empresa y de nuestros clientes.
+								</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+			{{!-- Valores --}}
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+								<h1 class="quienes-somos-encabezado text-center">Valores</h1>	
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">
+								<h2 class="quienes-somos-encabezado text-center">Satisfacción del cliente</h1>	
+								<p class="quienes-somos-descripcion text-center">
+									Entregar a nuestros clientes sus proyectos con la calidad, precio  y  tiempo pactados, brindándoles el mejor servicio antes, durante y después del proyecto.
+								</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">
+								<h2 class="quienes-somos-encabezado text-center">Mejora continua</h1>	
+								<p class="quienes-somos-descripcion text-center">
+									Proporcionar cada día la superación personal y el perfeccionamiento de nuestro trabajo mediante la medición, control y optimización del procesos.
+								</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">
+								<h2 class="quienes-somos-encabezado text-center">Colaboración</h1>	
+								<p class="quienes-somos-descripcion text-center">
+									Unirse al esfuerzo de los demás, aportando lo mejor de nosotros mismos, para obtener excelentes resultados.
+								</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">
+								<h2 class="quienes-somos-encabezado text-center">Responsabilidad</h1>	
+								<p class="quienes-somos-descripcion text-center">
+									Una de nuestras principales ventajas competitivas, es la reconocida capacidad para promover, desarrollar, ejecutar y gestionar cualquier tipo de infraestructura o servicio.
+								</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">
+								<h2 class="quienes-somos-encabezado text-center">Compromiso</h1>	
+								<p class="quienes-somos-descripcion text-center">
+									De un trato honesto y justo con nuestros clientes y colaboradores, ya que son nuestra mejor tarjeta de presentación.
+								</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col">
+								<h2 class="quienes-somos-encabezado text-center">Tolerancia</h1>	
+								<p class="quienes-somos-descripcion text-center">
+									Flexibilidad para encontrar la solución a las necesidades del cliente.
+								</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		{{!-- //seccion Servicios --}}
+		<div class="section" id="servicios-section">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+							<h1 class="servicios-encabezado text-center">SERVICIOS</h1>
+							
+						
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col">			
+							<h4 class="servicios-descripcion text-center">Contamos con instalaciones electricas y de tuberia, tambien fabricamos y montamos estructura para fábricas</h4>
+							
+						
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col">
+						<button type="button" class="btn-vermas btn btn-outline-light mx-auto btn-sm" style="width: 150px;">
+							<a class="text-center" href="#">Información</a>
+						</button>
+						
+					</div>
+					
+				</div>
+				{{!-- <div class="row">
+						<div class="col-4"></div>
+					<div class="col-4 logo">
+						<img src="/assets/img/logo.svg" alt="">
+					</div>
+					<div class="col-4"></div>
+					</div> --}}
+			</div>
+		</div>
+		{{!-- //seccion Instalaciones --}}
+		<div class="section" id="instalaciones-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-4 logo">
+						<img src="/assets/img/logo.svg" alt="">
+					</div>
+					<div class="col-4"></div>
+				</div>
+			</div>
+		</div>
+		{{!-- //seccion Clientes --}}
+		<div class="section" id="clientes-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-4 logo">
+						<img src="/assets/img/logo.svg" alt="">
+					</div>
+					<div class="col-4"></div>
+				</div>
+			</div>
+		</div>
+		{{!-- //seccion Contacto --}}
+		<div class="section" id="contacto-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-4"></div>
