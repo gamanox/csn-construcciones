@@ -1,9 +1,71 @@
-#quienes-somos-section
-  .fp-controlArrow
-    opacity: 0.3
+
+
+#quienes-somos-section, .section
   background-image: url("/assets/img/servicios-bg.jpg")
   background-size: cover
   background-position: 50% 50%
+  color: #fff
+
+  .slide
+    position: relative
+    z-index: 3
+    overflow: hidden
+    .subtitle
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      color: #fff
+      +bold
+      text-transform: uppercase
+      text-align: center
+      position: absolute
+      bottom: 20%
+      font-size: 28px
+      text-shadow: 0px 0px 10px #000
+    #index-video
+      filter: blur(4px)
+      position: absolute
+      height: 100%
+      width: 100%
+      object-fit: cover
+      z-index: 0
+      right: 0
+      bottom: 0
+      background: url(../img/index-image.jpg) no-repeat center center
+      background-size: cover
+      overflow: hidden
+
+
+    .logo-text
+      top: 150px
+      +bold
+      font-size: 54px
+      position: absolute
+      text-align: center
+      width: 100%
+      span
+        display: block
+        font-size: 18px
+        +semibold
+
+
+
+  // &:before
+  //   content: ''
+  //   position: absolute
+  //   background: rgba(0, 0, 0, 0.4)
+  //   border-radius: 5px
+  //   top: 0
+  //   right: 0
+  //   bottom: 0
+  //   left: 0
+  //   z-index: 1
+
+
+
+  .fp-controlArrow
+    opacity: 0.3
+
   .quienes-somos-encabezado,
   .quienes-somos-descripcion
     color: #fff

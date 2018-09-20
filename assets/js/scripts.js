@@ -10,9 +10,9 @@ $(document).ready(function() {
     animateAnchor: true,
     recordHistory: true,
     slidesNavigation: true,
-	slidesNavPosition: 'bottom',
+    slidesNavPosition: "bottom",
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-    // anchors: ["intro", "methodology", "team", "vision", "news", "contact"],
+    anchors: ["about", "servicios", "instalaciones", "clientes", "contacto"],
     onLeave: function() {},
     afterLoad: function(index, nextIndex) {
       // var currentSlide = nextIndex.anchor;
